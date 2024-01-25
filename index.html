@@ -27,16 +27,19 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </li>
+                    </li>
                 </ul>
                 <span class="navbar-text pe-2">
                     Great whiskeys delivered to your doorstep.
@@ -60,13 +63,14 @@
 
         <div class="row">
             <div class="col-12">
-                <section class="callout bg-light text-md-center text-lg-end">
+                <section class="callout bg-light text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s
                             class="d-none d-sm-inline">£19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <button class="btn btn-success btn-lg">Let's drink 🥃</button>
+                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Let's
+                        drink 🥃</button>
                     <p class="text-muted"><small>You must be 18 to sign up</small></p>
                 </section>
             </div>
@@ -124,7 +128,8 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3 ><i class="fa-solid fa-gift d-none"></i> Feature 1 <span class="badge bg-success">NEW</span></h3>
+                        <h3><i class="fa-solid fa-gift"></i> Feature 1 <span class="badge bg-success">NEW</span>
+                        </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -133,7 +138,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-credit-card d-none"></i> Feature 2</h3>
+                        <h3><i class="fa-solid fa-credit-card"></i> Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -157,6 +162,35 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/69f3a11e1c.js" crossorigin="anonymous"></script>
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPassword1" placeholder="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPassword2" class="form-label" >Repeat Password</label>
+                            <input type="password" class="form-control" id="InputPassword2" placeholder="password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
