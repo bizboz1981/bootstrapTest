@@ -2,8 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {
-}
+.alert-container {}
 
 .callout-container {
     height: 100vh;
@@ -12,61 +11,138 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.quotes-container {
+.quotes-container {}
+
+.features-container {}
+
+.callout {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 5px;
 }
 
-.features-container {
+.callout-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.callout small {
+    color: white;
+    font-size: 60%;
+    font-style: italic;
+}
+
+.callout .lead {
+    margin: 25px 0;
+    color: #a7a7a7;
 }
 
 
-/* BOOTSTRAP 5 BREAKPOINTS */
+.block-divider {
+    border: 0;
+    margin: 0 auto;
+    width: 75px;
+    height: 5px;
+}
+
+.block-divider--orange {
+    background-color:  #f05f40;
+    opacity: .75;
+}
+
+.opaque-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.btn-cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    z-index: 99;
+}
+
+.btn--red {
+    background-color: #f05f40;
+    border-color: #f05f40;
+    color: white;
+}
+
+.btn--red:hover {
+    background-color: #611403;
+    border-color: #611403;
+    color: white;
+}
+
+.btn-cta:hover {
+    background-color: #611403;
+    border-color: #611403;
+    color: white;
+}
+
+/* BOOTSTRAP 5 BREAKPOINTS
 
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
-#breakpoints::before {
+/* #breakpoints::before {
     content: "Extra Small mobile screens (<576px Portrait phones)";
     font-family: arial;
     color: #8B12FC;
     font-size: 20px;
-}
+} */
 
 
 
 /* MEDIA QUERIES AT BOTTOM OF CSS */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     #breakpoints::before {
         content: "Small screens and up (>576px Landscape phones) - 'sm'";
+        background-color: aquamarine;
     }
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     #breakpoints::before {
         content: "Medium screens and up (>768px Tablets) - 'md'";
+        background-color: aquamarine;
     }
-}
+} */
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     #breakpoints::before {
         content: "Large screens and up (>992px Desktops) - 'lg'";
+        background-color: aquamarine;
     }
-}
+} */
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     #breakpoints::before {
         content: "Extra Large screens and up (>1200px Large Desktops) - 'xl'";
+        background-color: aquamarine;
     }
-}
+} */
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     #breakpoints::before {
         content: "Extra Extra Large screens and up (>1400px Larger Desktops) - 'xxl'";
+        background-color: aquamarine;
     }
-}
+} */

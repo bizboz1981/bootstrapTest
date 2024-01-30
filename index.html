@@ -38,7 +38,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Test action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -49,79 +49,82 @@
                 <span class="navbar-text pe-2">
                     Great whiskeys delivered to your doorstep.
                 </span>
-                <span class="pe-2"><a href="#">Sign In|Sign Up</a></span>
+                <span class="pe-2"><a href="#">Sign In | Sign Up</a></span>
             </div>
         </div>
     </nav>
 
     <!-- css breakpoints alert-->
-    <div id="breakpoints"></div>
+    <!-- <div id="breakpoints"></div> -->
 
     <!--</div>-->
-    <div class="container alert-container">
+    <!-- <div class="container alert-container">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning"><strong>We've got a sale on!</strong> Lorem ipsum dolor sit amet.</div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Callout -->
-    <div class="container callout-container">
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
-                <section class="callout bg-light text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                <section class="callout text-center">
+                    <h1 class="callout-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s
                             class="d-none d-sm-inline">£19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Let's
+                    <button class="btn btn-lg btn--red btn-cta" data-bs-toggle="modal" data-bs-target="#signUpModal"">Let's
                         drink 🥃</button>
                     <p class="text-muted"><small>You must be 18 to sign up</small></p>
                 </section>
             </div>
         </div>
+
     </div>
     <!-- /.callout -->
 
     <!-- Quotes -->
     <div class="container quotes-container">
-    <section class="quotes">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-uppercase">Quotes:</h2>
+        <section class="quotes">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase">Quotes:</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="media alert alert-secondary" role="alert">
-                    <div class="d-none d-sm-block">
-                        <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" alt="">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="media alert alert-secondary" role="alert">
+                        <div class="d-none d-sm-block">
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" alt="">
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.
+                                </p>
+                                <p>- Jane Doe</p>
+                            </blockquote>
+                        </div>
                     </div>
-                    <div class="media-body">
-                        <blockquote class="blockquote">
-                            <p>I've been introduced to more than 10 great international whiskeys I never knew about.
-                            </p>
-                            <p>- Jane Doe</p>
-                        </blockquote>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media alert alert-secondary" role="alert">
+                        <div class="d-none d-sm-block">
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" alt="">
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!</p>
+                                <p>- Bob Cratchett</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="media alert alert-secondary" role="alert">
-                    <div class="d-none d-sm-block">
-                        <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" alt="">
-                    </div>
-                    <div class="media-body">
-                        <blockquote class="blockquote">
-                            <p>I haven't been sober for months!</p>
-                            <p>- Bob Cratchett</p>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
     <!-- /.quotes -->
 
@@ -200,5 +203,10 @@
         </div>
     </div>
 </body>
+<script>
+    function goToURL() {
+    window.location.href = 'https://www.example.com';
+    }
+</script>
 
 </html>
