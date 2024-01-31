@@ -115,6 +115,16 @@ body {
     line-height: 45px;
 }
 
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+}
+
 /* BOOTSTRAP 5 BREAKPOINTS
 
 /* X-Small devices (portrait phones, less than 576px) */
